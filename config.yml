@@ -1,6 +1,12 @@
 language: en
-pipeline: supervised_embeddings
-
+#pipeline: supervised_embeddings
+pipeline:
+- name: JiebaTokenizer
+- name: CRFEntityExtractor
+- name: CountVectorsFeaturizer
+  OOV_token: oov
+  token_pattern: '(?u)\b\w+\b'
+- name: EmbeddingIntentClassifier
 policies:
 - batch_size: 50
   epochs: 200

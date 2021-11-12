@@ -1,3 +1,4 @@
+version: "1.0"
 session_config:
   session_expiration_time: 60.0
   carry_over_slots_to_new_session: true
@@ -100,7 +101,8 @@ slots:
     type: text
   transaction:
     type: text
-templates:
+#templates:
+responses:
   utter_greet:
   - text: Hi. I can give you some information about banks or I can give you some details
       about the accounts you own. What do you want to know?
