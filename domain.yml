@@ -120,6 +120,8 @@ responses:
   utter_help:
   - text: I can tell you some facts about different banks. I can answer some questions
       about your accounts. And I can show you your recent transactions.
+  utter_default:
+    - text: Sorry,I didn't get that.
 actions:
 - action_compare_entities
 - action_query_attribute
