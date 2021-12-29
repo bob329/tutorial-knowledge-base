@@ -12,13 +12,13 @@ def execute(graql_query):
 
 
 if __name__ == "__main__":
-    graql_insert_query = """
-    insert $b isa bank, has name 'KfW', has country 'Germany', has headquarters 'Frankfurt am Main';
-    """
+    graql_insert_query = "insert $mp isa mention-mapping,has mapping-key '10',has mapping-value '9';"
+#    insert $b isa bank, has name 'KfW', has country 'Germany', has headquarters 'Frankfurt am Main';
+#    """
     execute(graql_insert_query)
 
-    graql_delete_query = """
-    match $b isa bank, has name 'KfW'; delete $b;
-    """
-    #execute(graql_delete_query)
+    graql_delete_query = "match $mapping-value id V221352;delete;"
+#    match $b isa bank, has name 'KfW'; delete $b;
+#    """
+#   execute(graql_delete_query)
 
