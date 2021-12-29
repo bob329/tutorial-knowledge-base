@@ -50,7 +50,6 @@
 - yes accept please
 - great
 - oh cool
-- yes
 - fine
 
 ## intent:bye
@@ -189,13 +188,10 @@
 - hey dude
 - hello it is me again
 - what up
-- hi there
-- hi
 - jop
 - hi friend
 - hi there it's me
 - good evening
-- good morning
 - good afternoon
 - HI
 - Hello?
@@ -280,6 +276,7 @@
 - what about the [last](mention) one
 - What is the [HQ](attribute) of the [third](mention) one
 - what is the [headquarters](attribute) of the [first](mention) one
+- What is the [headquarters](attribute) of the [first](mention) [bank](entity_type)?
 
 ## intent:query_entities
 - What options for [banks](entity_type) do I have?
@@ -328,7 +325,6 @@
 - what are my [transactions](entity_type) on [DE82444435329779109646](account)
 - what are my recent [transaction](entity_type) on [food](category)
 - i want to check on my [accounts](entity_type)
-- what are my [banking](entity_type) options?>
 - what are my [banking](entity_type) options?
 - What are my [accounts](entity_type)?
 - What [accounts](entity_type) do I have?
@@ -349,8 +345,8 @@
 - and what are [transactions](entity_type) from my account [DE76894768662419673111](account)
 - can you only show me [transactions](entity_type) from my account [DE70334119137743514093](account)
 - can you show me some of my recent [transactions](entity_type)
-- what are [banks](entity_type) you can recommend
-- what [banks](entity_type) do you know
+- what are [banks](entity_type) you can recommend?
+- what [banks](entity_type) do you know?
 
 ## intent:resolve_entity
 - [1](mention)

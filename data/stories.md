@@ -181,3 +181,16 @@
   - slot{"account": "DE89370400440532013000"}
 * bye
   - utter_goodbye
+## interactive_story_1
+* query_entities{"entity_type": "bank"}
+    - slot{"entity_type": "bank"}
+    - action_query_entities
+    - slot{"entity_type": "bank"}
+    - slot{"listed_items": ["Targobank", "bunq", "Deutsche Bank", "Comdirect", "Commerzbank", "N26", "DKB"]}
+* query_attribute{"attribute": "headquarter", "mention": "first", "entity_type": "bank"}
+    - slot{"attribute": "headquarter"}
+    - slot{"entity_type": "bank"}
+    - slot{"mention": "first"}
+    - action_query_attribute
+    - slot{"mention": null}
+    - slot{"bank": "Targobank"}
