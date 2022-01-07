@@ -1,3 +1,3 @@
-rasa-sdk==1.7.0
-rasa==1.7.0
+rasa-sdk==1.10.3
+rasa==1.10.26
 grakn-client==1.5.3

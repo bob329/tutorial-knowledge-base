@@ -17,7 +17,7 @@ if __name__ == "__main__":
 #    """
     execute(graql_insert_query)
 
-    graql_delete_query = "match $mapping-value id V221352;delete;"
+    graql_delete_query = "match $mapping-mapping id V397488;delete;"
 #    match $b isa bank, has name 'KfW'; delete $b;
 #    """
 #   execute(graql_delete_query)
